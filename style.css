@@ -1,0 +1,80 @@
+body {
+  font-family: "Open Sans";
+}
+
+#background-img {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.container-fluid {
+  width: 70%;
+  min-height: 100vh;
+  margin: auto;
+  background: rgba(254,254,231,0.7);
+}
+
+.headline {
+  color: rgb(83,157,143);
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  border: 1px solid rgb(164,208,196);
+  border-radius: 10px;
+  background: rgb(154,156,159);
+  padding-left: 5px;
+} input:focus {
+  outline: none;
+}
+
+.btn {
+  background: rgb(15,15,13);
+  color: rgb(164,208,196) !important;
+  outline: none !important;
+  border: none !important;
+} .btn:hover {
+  background: rgb(164,208,196);
+  color: rgb(15,15,13) !important;
+}
+
+.search-result {
+  background: rgba(114,196,185,0.4);
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: rgb(15,15,13);
+}
+.search-result:hover {
+  animation: hover-anim 300ms linear forwards;
+  -webkit-animation: hover-anim 300ms linear forwards;
+}a:hover {
+  text-decoration: none !important;
+}
+
+@keyframes hover-anim {
+  from {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-left: 0px solid crimson;
+  }
+  to {
+    margin-left: 60px;
+    margin-right: 40px;
+    border-left: 5px solid crimson;
+  }
+}
+@-webkit-keyframes hover-anim {
+  from {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-left: 0px solid crimson;
+  }
+  to {
+    margin-left: 60px;
+    margin-right: 40px;
+    border-left: 5px solid crimson;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Wikipedia Viewer</title>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+	</head>
+	<body>
+
+    <img id="background-img" src="photos/wikipedia.png" alt="background">
+
+    <div class="container-fluid">
+      <div class="text-center">
+        <h1 class="headline">
+          Search for a
+          <i class="fa fa-wikipedia-w"></i>ikipedia article
+        </h1>
+
+        <form action="javascript:getSearchList(document.getElementById('search-bar').value)">
+          <input type="text" id="search-bar" name="search" autocomplete="off">
+          <button type="submit" value="submit" id="search" class="btn">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </form>
+
+        <p class="random-article">
+          Do you wish you were as brave as Simon The Great and Omnipotent?
+          <br>
+          Then click <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">here</a> for a random article.
+        </p>
+
+        <div id="search-list">
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
