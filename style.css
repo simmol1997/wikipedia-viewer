@@ -13,7 +13,7 @@ body {
   width: 70%;
   min-height: 100vh;
   margin: auto;
-  background: rgba(254,254,231,0.7);
+  background: rgba(254,254,231,0.6);
 }
 
 .headline {
@@ -31,6 +31,7 @@ body {
   background: rgb(154,156,159);
   padding-left: 5px;
   line-height: 30px;
+  max-width: 70%;
 } input:focus {
   outline: none;
 }
@@ -82,4 +83,8 @@ body {
     margin-right: 40px;
     border-left: 5px solid crimson;
   }
+}
+
+@media (max-width: 767px) {
+  width: 100%;
 }
